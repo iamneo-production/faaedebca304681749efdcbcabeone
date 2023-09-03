@@ -1,1 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=R");
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap");
+ body{
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "Radio Canada",sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+h1{
+    color: whitesmoke;
+
+}
