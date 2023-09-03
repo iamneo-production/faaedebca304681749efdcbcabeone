@@ -48,8 +48,13 @@ function handleMove(element,index){
 
          }
          else{
-            result.innerHTML = ‵Player ${currentPlayer}Turn‵;
+            result.innerHTML = `Player ${currentPlayer}Turn´;
+            reset.disabled = true;
 
          }
+}
+    function resetGame(){
+        cells = [",",",]
+
 }
 
