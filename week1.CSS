@@ -87,5 +87,8 @@ h1{
 #reset:hover{
     color:white;
     background-color: black;
-    transform: tra;
+    transform: translate(2px 3px);
+}
+#main{
+    text-align:center;
 }
