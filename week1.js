@@ -38,7 +38,18 @@ function handleMove(element,index){
     const winner = checkWin();
     if(winner==='draw'){
         result.innerHTML='it\'s a draw!';
-        reset.disabled
+        reset.disabled=false;
+
     }
+         else if(winner){
+            result.innerHTML=`Player ${winner}WON`;
+            btns.forEach((btn)=>btn.disabled=true);
+            reset.disabled = false;
+
+         }
+         else{
+            result.innerHTML = ‵Player ${currentPlayer}Turn‵;
+
+         }
 }
 
