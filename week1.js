@@ -27,5 +27,18 @@ function checkWin(){
     }
     return null;
 }
-function handleMove(element,)
+function handleMove(element,index){
+    if(cells[index]||checkWin()){
+        return;
+    }
+    cells[index]=currentPlayer;
+    element.value=currentPlayer;
+    element.disabled=true;
+    currentPlayer=currentPlayer==='X'?'O':'X';
+    const winner = checkWin();
+    if(winner==='draw'){
+        result.innerHTML='it\'s a draw!';
+        reset.disabled
+    }
+}
 
